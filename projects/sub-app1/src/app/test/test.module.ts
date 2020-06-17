@@ -1,0 +1,21 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { TestComponent } from './test.component';
+import { TestRoutingModule } from './test-routing.module';
+// import { SharedModule } from 'src/app/shared/shared.module';
+
+
+@NgModule({
+  imports: [
+    CommonModule,
+    TestRoutingModule,
+    // SharedModule
+  ],
+  declarations: [
+    TestComponent
+  ],
+  providers: [
+  ]
+})
+export class TestModule { }
