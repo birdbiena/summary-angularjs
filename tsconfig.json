@@ -20,9 +20,11 @@
     ],
     "paths": {
       "my-lib": [
+        "dist/my-lib",
         "dist/my-lib"
       ],
       "my-lib/*": [
+        "dist/my-lib/*",
         "dist/my-lib/*"
       ]
     }
