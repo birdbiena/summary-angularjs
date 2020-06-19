@@ -1,5 +1,5 @@
 {
-  "name": "sub-app1",
+  "name": "kubernetes",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^8.2.14",
