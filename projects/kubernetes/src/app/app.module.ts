@@ -9,8 +9,10 @@ import { NavComponent } from './nav/nav.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { TestModule } from './test/test.module';
 
+import { ShareDataService } from 'src/app/shared/services/share-data.service';
+
 // List of providers
-const providers = [];
+const providers = [ShareDataService];
 
 @NgModule({
   declarations: [

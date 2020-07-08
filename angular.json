@@ -122,10 +122,48 @@
       "schematics": {},
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "outputPath": "dist/kubernetes",
+            "index": "projects/kubernetes/src/index.html",
+            "main": "projects/kubernetes/src/main.ts",
+            "polyfills": "projects/kubernetes/src/polyfills.ts",
             "tsConfig": "projects/kubernetes/tsconfig.app.json",
-            "project": "projects/kubernetes/ng-package.json"
+            "assets": [
+              "projects/kubernetes/src/favicon.ico",
+              "projects/kubernetes/src/assets"
+            ],
+            "styles": [
+              "projects/kubernetes/src/styles.css"
+            ],
+            "scripts": [],
+            "es5BrowserSupport": false
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kubernetes/src/environments/environment.ts",
+                  "with": "projects/kubernetes/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
           }
         },
         "serve": {

@@ -20,10 +20,14 @@ const routes: Routes = [
       {
         path: 'test',
         component: TestComponent
+      },
+      {
+        path: '',
+        redirectTo: 'one',
+        pathMatch: 'full'
       }
-    ],
-  },
-  { path: 'app1', pathMatch: 'full', redirectTo: 'app1/one' }
+    ]
+  }
 ];
 
 @NgModule({
