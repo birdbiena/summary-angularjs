@@ -18,13 +18,18 @@ const routes: Routes = [
         loadChildren: () => import('./../../projects/management/src/app/app.module').then(m => m.App2SharedModule)
       },
       {
+        path: 'qyp',
+        // loadChildren: 'qyp#QypModule'
+        loadChildren: () => import('qyp').then(m => m.QypModule)
+      },
+      {
         path: '',
         redirectTo: 'app1',
         pathMatch: 'full'
       }
     ]
   },
-  { path: '**', redirectTo: '/app1/one' }
+  // { path: '**', redirectTo: '/app1/one' }
 ];
 
 @NgModule({

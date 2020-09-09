@@ -21,11 +21,11 @@ const routes: Routes = [
         path: 'test',
         component: TestComponent
       },
-      {
-        path: '',
-        redirectTo: 'one',
-        pathMatch: 'full'
-      }
+      // {
+      //   path: '',
+      //   redirectTo: 'one',
+      //   pathMatch: 'full'
+      // }
     ]
   }
 ];

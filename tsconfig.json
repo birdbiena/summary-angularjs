@@ -15,17 +15,15 @@
       "node_modules/@types"
     ],
     "lib": [
-      "es2017",
+      "es2018",
       "dom"
     ],
     "paths": {
-      "my-lib": [
-        "dist/my-lib",
-        "dist/my-lib"
+      "qyp": [
+        "projects/qyp"
       ],
-      "my-lib/*": [
-        "dist/my-lib/*",
-        "dist/my-lib/*"
+      "qyp/*": [
+        "projects/qyp/*"
       ]
     }
   }

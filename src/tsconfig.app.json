@@ -8,6 +8,18 @@
   },
   "exclude": [
     "test.ts",
-    "**/*.spec.ts"
+    "**/*.spec.ts",
+    "../node_modules/**/*.spec.ts",
+    "../node_modules/**/test.ts"
+  ],
+  "include": [
+    "*.ts",
+    "./environments",
+    "./app",
+    "../node_modules/qyp/**/*.ts",
+    "**/projects/qyp/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.lazy.ts",
+    "../projects/qyp/**/*.d.ts"
   ]
 }
